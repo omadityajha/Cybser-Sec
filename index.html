@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Tools by Omaditya Jha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>CyberSec Tools</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Tools</a>
+            <a href="#">About</a>
+            <a href="#">Sign In</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>We Secure Your Digital World</h1>
+        <p>Professional cybersecurity tools crafted by Omaditya Jha</p>
+    </header>
+
+    <main class="container">
+        <section class="password-checker">
+            <h2>Password Strength Analyzer</h2>
+            
+            <!-- Personal Info Toggle -->
+            <div class="personal-info-toggle">
+                <button id="togglePersonalInfo">
+                    <i class="fas fa-user-shield"></i>
+                    Add Personal Information
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <p class="info-message">Adding personal information helps detect if your password contains sensitive data.</p>
+            </div>
+
+            <!-- Personal Info Form -->
+            <div class="personal-info-form" style="display: none;">
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name">
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="email" id="email" placeholder="Email Address">
+                    <input type="text" id="dob" placeholder="Date of Birth (MM/DD/YYYY)">
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                    <input type="text" id="address" placeholder="Address">
+                    <input type="text" id="socialMedia" placeholder="Social Media Username">
+                    <input type="text" id="familyNames" placeholder="Family Members' Names (comma-separated)">
+                    <input type="text" id="petNames" placeholder="Pet Names (comma-separated)">
+                </div>
+            </div>
+
+            <!-- Add after the h2 and before password input -->
+            <div class="security-buddy">
+                <div class="buddy-character">🛡️</div>
+                <div class="buddy-speech-bubble hidden">
+                    <p class="buddy-message">Hi! I'm your Security Buddy!</p>
+                </div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="password-input-container">
+                <input type="password" id="passwordInput" placeholder="Enter your password to check its strength">
+                <button id="togglePassword">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+
+            <!-- Submit Button -->
+            <button id="checkPassword" class="submit-btn">
+                Check Password Strength
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+            <!-- Strength Meter -->
+            <div class="strength-meter">
+                <div class="strength-bar"></div>
+            </div>
+            <div class="strength-text">Password Strength: <span id="strengthText">-</span></div>
+
+            <!-- Failed Rules Container -->
+            <div class="failed-rules" style="display: none;">
+                <h3>Password Issues Found:</h3>
+                <ul id="failedRulesList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CyberSec Tools by Omaditya Jha | Securing the Future</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>     
