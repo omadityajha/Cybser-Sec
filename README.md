@@ -8,4 +8,3 @@ We are planning to add more features to this Website in the future.
 - Password strength checker with personal information ## Currently Live
 - Password generator                                  ## Currently working 
 - Password manager                                    ## Currently working
-- 
